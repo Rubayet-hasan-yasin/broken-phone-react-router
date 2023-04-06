@@ -26,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'device/:id',
-        element: <DeviceDetails />
+        element: <DeviceDetails />,
+        loader: ({params})=> fetch(`https://openapi.programming-hero.com/api/phone/${params.id}`) 
       },
       {
         path: 'order',

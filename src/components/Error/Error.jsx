@@ -4,8 +4,8 @@ import Lottie from "lottie-react";
 
 const Error = () => {
     return (
-        <div className='h-screen w-screen'>
-            <Lottie animationData={error} loop={true} className='h-full w-full'></Lottie>
+        <div className='bg-[#3A1740]'>
+            <Lottie animationData={error} loop={true} className='h-screen w-full'></Lottie>
         </div>
     );
 };
