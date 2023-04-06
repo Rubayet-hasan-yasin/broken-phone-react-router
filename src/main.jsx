@@ -7,11 +7,14 @@ import Shop from './components/shop/Shop'
 import Order from './components/Order/Order'
 import Home from './components/Home/Home'
 import About from './components/About/About'
+import Error from './components/Error/Error'
+import DeviceDetails from './components/DeviceDetails/DeviceDetails'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
@@ -20,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'shop',
         element: <Shop />
+      },
+      {
+        path: 'device/:id',
+        element: <DeviceDetails />
       },
       {
         path: 'order',

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import animation from '../../assets/animation.json'
+import Lottie from "lottie-react";
+
 
 const Home = () => {
     return (
@@ -18,13 +21,12 @@ const Home = () => {
                 </p>
 
                 <Link to='shop' className='px-14 py-2 border-2 border-blue-500 rounded-full hover:border-black font-bold'>
-                        Shop Now
+                    Shop Now
                 </Link>
 
             </div>
             <div>
-                heloo
-
+                <Lottie animationData={animation} loop={true} />
             </div>
 
         </div>
